@@ -9,12 +9,21 @@ public class Program {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-
+		
+		String [] pilares = {"Encapsulamento","Herança","Poliformismo"};
+		
 		// Metodos abstracao = new Metodos();
 		Metodos metodos = new Metodos();
 		Metodos titulo = new Metodos();
-
+		
 		System.out.println(titulo.getTitulo().toUpperCase());
+		System.out.println("Os 3 pilares da Programação orientada a objetos são citados abaixo:");		
+		for (int i=0 ; i<pilares.length ; i++) {
+			System.out.println((i+1)+"-"+pilares[i]);		
+			
+			
+		}
+		
 		Program.estatico();
 		Metodos.vantagens();
 		metodos.abstracao();
@@ -26,6 +35,8 @@ public class Program {
 		metodos.heranca();
 		metodos.encapsulamento();
 		metodos.polimorfismo();
+		metodos.comportamento();
+		metodos.estado();
 		
 
 		/*
